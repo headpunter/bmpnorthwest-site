@@ -9,130 +9,169 @@
 <meta property="og:description" content="Your stormwater permit, handled. Inspections, sampling, and reporting for Western Washington job sites.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.bmpnorthwest.com/">
+<meta property="og:image" content="https://www.bmpnorthwest.com/logo-512.png">
 <link rel="canonical" href="https://www.bmpnorthwest.com/">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"BMP Northwest Consulting","legalName":"BMP Consulting LLC","url":"https://www.bmpnorthwest.com/","description":"Construction stormwater inspections, sampling, and permit reporting for job sites across Western Washington.","address":{"@type":"PostalAddress","addressLocality":"Centralia","addressRegion":"WA","addressCountry":"US"},"areaServed":[{"@type":"AdministrativeArea","name":"Whatcom County, Washington"},{"@type":"AdministrativeArea","name":"Skagit County, Washington"},{"@type":"AdministrativeArea","name":"San Juan County, Washington"},{"@type":"AdministrativeArea","name":"Island County, Washington"},{"@type":"AdministrativeArea","name":"Snohomish County, Washington"},{"@type":"AdministrativeArea","name":"Clallam County, Washington"},{"@type":"AdministrativeArea","name":"Jefferson County, Washington"},{"@type":"AdministrativeArea","name":"King County, Washington"},{"@type":"AdministrativeArea","name":"Kitsap County, Washington"},{"@type":"AdministrativeArea","name":"Mason County, Washington"},{"@type":"AdministrativeArea","name":"Grays Harbor County, Washington"},{"@type":"AdministrativeArea","name":"Pierce County, Washington"},{"@type":"AdministrativeArea","name":"Thurston County, Washington"},{"@type":"AdministrativeArea","name":"Lewis County, Washington"},{"@type":"AdministrativeArea","name":"Pacific County, Washington"},{"@type":"AdministrativeArea","name":"Wahkiakum County, Washington"},{"@type":"AdministrativeArea","name":"Cowlitz County, Washington"},{"@type":"AdministrativeArea","name":"Skamania County, Washington"},{"@type":"AdministrativeArea","name":"Clark County, Washington"}],"knowsAbout":["Construction Stormwater General Permit","CESCL inspections","Discharge Monitoring Reports","Turbidity and pH sampling","Erosion and sediment control"]}</script>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@87.5,400;87.5,500;100,400;100,500;100,700;112.5,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,400;100,500;100,700;112.5,700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --ink:#16222B; --slate:#243441; --rain:#E7ECEF; --paper:#F7F8F9;
-  --orange:#E5641F; --orange-ink:#B84B12; --mute:#5B6B77; --line:#C9D2D8;
-  --w:1080px;
-}
+:root{--ink:#16222B;--slate:#243441;--rain:#E7ECEF;--paper:#F7F8F9;--orange:#E5641F;--orange-ink:#B84B12;--mute:#5B6B77;--line:#C9D2D8;--w:1080px}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 Archivo,system-ui,sans-serif;font-variation-settings:"wdth" 100}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--rain);color:var(--ink);font:400 17px/1.55 Archivo,system-ui,sans-serif;font-variation-settings:"wdth" 100;padding:24px}
 a{color:inherit}
-.wrap{max-width:var(--w);margin:0 auto;padding:0 20px}
-h1,h2,h3{margin:0;line-height:1.08;font-weight:700;font-variation-settings:"wdth" 112.5;letter-spacing:-.01em}
-h2{font-size:clamp(28px,4vw,38px);margin-bottom:28px}
-p{margin:0 0 1em}
-.btn{display:inline-block;padding:14px 22px;border-radius:4px;font-weight:500;text-decoration:none;border:2px solid transparent}
-.btn.orange{background:var(--orange);color:#fff}
-.btn.orange:hover{background:var(--orange-ink)}
-.btn.ghost{border-color:rgba(255,255,255,.4);color:#fff}
-.btn.ghost:hover{border-color:#fff}
 :focus-visible{outline:3px solid var(--orange);outline-offset:3px}
-
-/* hero */
-.hero{background:var(--slate);color:#fff;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;
-  background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.07) 0 1px,transparent 1px 14px);
-  mask-image:linear-gradient(180deg,transparent 10%,#000 60%);-webkit-mask-image:linear-gradient(180deg,transparent 10%,#000 60%)}
-.hero .wrap{position:relative;padding-top:28px;padding-bottom:64px}
-.brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:18px;margin-bottom:72px}
-.brand svg{width:34px;height:34px}
-.hero h1{font-size:clamp(34px,6vw,64px);max-width:15ch}
-.hero .lede{font-size:clamp(18px,2.2vw,22px);max-width:46ch;margin:22px 0 36px;color:#D6DEE4}
-.phone{display:block;font-weight:700;font-variation-settings:"wdth" 112.5;font-size:clamp(34px,6.5vw,72px);line-height:1;color:var(--orange);text-decoration:none;letter-spacing:-.02em;margin-bottom:24px}
-.phone:hover{color:#FF8A4A}
-.hero .acts{display:flex;gap:12px;flex-wrap:wrap}
-.btn{cursor:pointer;font:inherit;font-weight:500}
-.note{font-size:15px;color:#B9C6CF;margin:12px 0 0}
-.turnstile{margin:0 0 16px}
 [hidden]{display:none!important}
+h1,h2,h3{margin:0;font-weight:700;font-variation-settings:"wdth" 112.5;line-height:1.08;letter-spacing:-.005em}
+p{margin:0 0 1em}
+
+/* the sheet */
+.sheet{position:relative;background-color:var(--paper);border:1px solid var(--ink);
+  background-image:linear-gradient(to right,rgba(201,210,216,.45) 1px,transparent 1px),linear-gradient(to bottom,rgba(201,210,216,.45) 1px,transparent 1px);
+  background-size:40px 40px}
+.sheet::before{content:"";position:absolute;inset:5px;border:2px solid var(--ink);pointer-events:none;z-index:5}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 48px}
+
+/* title block header */
+.head{display:grid;grid-template-columns:1fr 380px;border-bottom:2px solid var(--ink)}
+.head .main{padding:56px 48px;border-right:1px solid var(--ink)}
+.redline{display:block;color:var(--orange);font-weight:700;font-size:14px;letter-spacing:.06em;margin-bottom:18px}
+h1{font-size:clamp(36px,6vw,64px);max-width:14ch}
+.lede{color:var(--mute);font-size:clamp(18px,2.2vw,22px);max-width:44ch;margin:22px 0 30px}
+.acts{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{display:inline-block;padding:13px 22px;border:2px solid var(--ink);background:var(--ink);color:#fff;font:inherit;font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--paper);color:var(--ink)}
+.btn.or{border-color:var(--orange);background:var(--orange);color:#fff}
+.btn.or:hover{background:var(--orange-ink);border-color:var(--orange-ink)}
+.btn.ln{background:transparent;color:var(--orange);border-color:var(--orange)}
+.btn.ln:hover{background:var(--orange);color:#fff}
+.phone{display:block;font-weight:700;font-variation-settings:"wdth" 112.5;font-size:clamp(34px,5.5vw,60px);line-height:1;color:var(--orange);text-decoration:none;margin-bottom:18px}
+.note{font-size:15px;color:var(--mute);margin:12px 0 0}
+.turnstile{margin:0 0 14px}
+
+.tb{display:flex;flex-direction:column;background:rgba(231,236,239,.6)}
+.tb .id{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px 24px;border-bottom:1px solid var(--ink)}
+.mark{width:96px;height:96px;image-rendering:pixelated;display:block;margin-bottom:16px}
+.tb .name{font-weight:700;font-variation-settings:"wdth" 112.5;font-size:22px;letter-spacing:.08em;text-transform:uppercase}
+.tb .name small{display:block;font-size:13px;letter-spacing:.32em;color:var(--mute);font-weight:500;margin-top:4px}
+.tb dl{display:grid;grid-template-columns:1fr 1fr;margin:0;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.tb dl div{padding:10px 14px;border-top:1px solid var(--ink)}
+.tb dl div:nth-child(odd){border-right:1px solid var(--ink)}
+.tb dl div:nth-child(-n+2){border-top:0}
+.tb dt{color:var(--mute);font-weight:500}
+.tb dd{margin:2px 0 0;font-weight:700}
 
 /* sections */
-section{padding:72px 0}
-section + section{border-top:1px solid var(--line)}
-.services{background:var(--rain)}
-.svc{display:grid;grid-template-columns:1fr 1fr;gap:34px 56px;list-style:none;margin:0;padding:0}
-.svc li{border-top:3px solid var(--orange);padding-top:14px}
-.svc h3{font-size:21px;margin-bottom:8px}
-.svc p{margin:0;color:var(--mute);max-width:42ch}
+section{padding:80px 0;border-top:2px solid var(--ink)}
+.head + section{border-top:0}
+h2{display:flex;align-items:center;gap:16px;font-size:clamp(26px,3.6vw,36px);text-transform:uppercase;margin-bottom:44px}
+h2::after{content:"";flex:1;height:1px;background:var(--ink)}
+.callout{display:inline-flex;align-items:center;justify-content:center;flex:0 0 46px;height:46px;border:2px solid var(--ink);border-radius:50%;background:var(--paper);font-size:22px}
+h3{font-size:19px;text-transform:uppercase;margin-bottom:8px}
+.mute{color:var(--mute)}
 
-.why{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:28px 56px}
-.why li{padding-left:18px;border-left:3px solid var(--orange)}
-.why h3{font-size:20px;margin-bottom:6px}
+.svc{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:44px 64px}
+.svc li{position:relative;padding-left:24px;border-left:1px solid var(--ink)}
+.svc li::before{content:"";position:absolute;left:-5px;top:6px;width:9px;height:9px;border-radius:50%;background:var(--orange)}
+.svc p{margin:0;max-width:42ch;color:var(--mute)}
+
+.why{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:28px 40px}
+.why li{padding:24px;border:1px solid var(--ink);background:var(--paper);box-shadow:4px 4px 0 var(--line)}
+.why h3 span{color:var(--orange);margin-right:10px}
 .why p{margin:0;color:var(--mute);max-width:44ch}
-.area{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.area .text p{max-width:48ch}
-.map{width:100%;max-width:440px;height:auto;display:block;margin:0 auto}
-.map path{fill:#F2B890;stroke:var(--paper);stroke-width:1.2;stroke-linejoin:round;cursor:default}
-.map path:hover,.map path.on{fill:var(--orange)}
-.county{font-weight:700;font-size:22px;min-height:1.4em;margin:14px 0 0;color:var(--orange-ink)}
-.county small{font-weight:400;color:var(--mute);font-size:16px}
-.about{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:start}
-.about .text p{max-width:56ch}
-.facts{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-.facts li{padding:14px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:120px 1fr;gap:14px}
-.facts b{font-weight:500;color:var(--mute)}
 
-.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:40px;counter-reset:s}
+.area{display:grid;grid-template-columns:1fr 470px;gap:56px;align-items:center}
+.area h2{margin-bottom:28px}
+.area p{color:var(--mute);max-width:46ch}
+.county{margin:8px 0 0;padding:14px 18px;border-left:4px solid var(--orange);background:rgba(231,236,239,.6);font-weight:700;font-variation-settings:"wdth" 112.5;font-size:22px;text-transform:uppercase;min-height:1.6em}
+.county small{font-weight:400;font-variation-settings:"wdth" 100;text-transform:none;font-size:16px;color:var(--mute)}
+.plan{border:2px solid var(--ink);background:var(--paper);padding:20px}
+.map{width:100%;height:auto;display:block}
+.map .co path{fill:#F2B890;stroke:var(--ink);stroke-width:.9;stroke-linejoin:round;cursor:default;transition:fill .12s}
+.map .co path:hover,.map .co path.on{fill:var(--orange)}
+.map text{font-family:Archivo,sans-serif;font-weight:700;fill:var(--ink)}
+
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:48px;counter-reset:s}
 .steps li{counter-increment:s}
-.steps li::before{content:counter(s);display:block;font-size:44px;font-weight:700;color:var(--orange);line-height:1;margin-bottom:10px;font-variation-settings:"wdth" 112.5}
-.steps h3{font-size:20px;margin-bottom:8px}
-.steps p{color:var(--mute);margin:0;max-width:34ch}
+.steps li::before{content:counter(s);display:block;font-size:44px;font-weight:700;font-variation-settings:"wdth" 112.5;line-height:1;padding-bottom:10px;margin-bottom:16px;border-bottom:2px solid var(--ink)}
+.steps p{margin:0;color:var(--mute);max-width:34ch}
 
-footer{background:var(--ink);color:#fff;padding:64px 0 40px}
-footer .grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-footer h2{font-size:clamp(26px,3.5vw,34px)}
-footer a{text-decoration:none}
-footer a:hover{text-decoration:underline}
-.contact{font-size:22px;line-height:1.5}
-.contact a{color:#fff;font-weight:500}
-.small{color:#9FB0BC;font-size:15px;margin-top:40px}
-.small a{color:#9FB0BC}
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:start}
+.about .text p{color:var(--mute);max-width:56ch}
+.facts{border:2px solid var(--ink);padding:22px 24px;background:rgba(231,236,239,.4)}
+.facts h3{font-size:13px;letter-spacing:.16em;padding-bottom:10px;margin-bottom:4px;border-bottom:1px solid var(--ink)}
+.facts dl{margin:0}
+.facts div{display:grid;grid-template-columns:120px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.facts div:last-child{border-bottom:0;padding-bottom:0}
+.facts dt{font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.facts dd{margin:0;color:var(--mute)}
 
-@media (max-width:760px){
-  .brand{margin-bottom:48px}
-  .svc,.why,.area,.about,.steps,footer .grid{grid-template-columns:1fr}
-  .facts li{grid-template-columns:1fr;gap:2px}
+footer{border-top:4px solid var(--ink);background:var(--rain);padding:64px 0 44px}
+footer .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+footer h2{display:block;margin-bottom:20px}
+footer h2::after{display:none}
+footer .box{border:2px solid var(--ink);background:var(--paper);padding:28px}
+footer .box .btn{width:100%;text-align:center}
+footer .contact a[data-phone]{font-size:clamp(28px,4vw,40px);margin-bottom:6px}
+footer .contact a[data-email]{display:block;font-weight:700;font-size:18px;color:var(--ink);text-decoration:none;word-break:break-all}
+footer .addr{display:block;margin-top:20px;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);line-height:1.5}
+.legal{margin:56px 0 0;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+
+@media (max-width:900px){
+  .head{grid-template-columns:1fr}
+  .head .main{border-right:0;border-bottom:1px solid var(--ink)}
+  .area,.about,footer .grid{grid-template-columns:1fr}
+  .area .plan{max-width:470px}
+}
+@media (max-width:700px){
+  body{padding:8px}
+  .wrap,.head .main{padding-left:22px;padding-right:22px}
+  .head .main{padding-top:40px;padding-bottom:40px}
   section{padding:56px 0}
-  .hero .wrap{padding-bottom:48px}
+  .svc,.why,.steps{grid-template-columns:1fr}
+  .facts div{grid-template-columns:1fr;gap:2px}
+  h2{gap:12px}
+  .callout{flex-basis:38px;height:38px;font-size:18px}
 }
-@media (prefers-reduced-motion:no-preference){
-  .btn,.phone{transition:color .15s,background-color .15s,border-color .15s}
-}
+@media (prefers-reduced-motion:reduce){.map .co path{transition:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
+<div class="sheet">
 
-<header class="hero">
-  <div class="wrap">
-    <div class="brand">
-      <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="4" fill="#E5641F"/><path d="M8 24h18M10 19h14M12 14h10M14 9h6" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
-      BMP Northwest Consulting
-    </div>
+<header class="head">
+  <div class="main" data-reveal>
+    <span class="redline">Sheet 01: general notes</span>
     <h1>Your stormwater permit, handled.</h1>
     <p class="lede">Inspections, sampling, and reporting for construction sites across Western Washington. One call and it is off your plate.</p>
-    <div class="reveal" data-reveal>
-      <a class="phone" data-phone hidden></a>
-      <div class="acts">
-        <button class="btn orange" type="button" data-show>Show phone and email</button>
-        <a class="btn orange" data-email hidden>Email Max</a>
-        <a class="btn ghost" href="#services">What you get</a>
-      </div>
-      <p class="note" data-note hidden></p>
+    <a class="phone" data-phone hidden></a>
+    <div class="acts">
+      <button class="btn ln" type="button" data-show>Show phone and email</button>
+      <a class="btn or" data-email hidden>Email Max</a>
+      <a class="btn" href="#services">What you get</a>
     </div>
+    <p class="note" data-note hidden></p>
+  </div>
+  <div class="tb">
+    <div class="id">
+      <svg class="mark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="crispEdges"><rect x="0" y="0" width="16" height="1" fill="#243441"/><rect x="0" y="1" width="16" height="1" fill="#243441"/><rect x="0" y="2" width="2" height="1" fill="#243441"/><rect x="2" y="2" width="1" height="1" fill="#C9A06A"/><rect x="3" y="2" width="5" height="1" fill="#243441"/><rect x="8" y="2" width="1" height="1" fill="#C9A06A"/><rect x="9" y="2" width="5" height="1" fill="#243441"/><rect x="14" y="2" width="1" height="1" fill="#C9A06A"/><rect x="15" y="2" width="1" height="1" fill="#243441"/><rect x="0" y="3" width="2" height="1" fill="#243441"/><rect x="2" y="3" width="1" height="1" fill="#C9A06A"/><rect x="3" y="3" width="1" height="1" fill="#E5641F"/><rect x="4" y="3" width="3" height="1" fill="#243441"/><rect x="7" y="3" width="1" height="1" fill="#E5641F"/><rect x="8" y="3" width="1" height="1" fill="#C9A06A"/><rect x="9" y="3" width="1" height="1" fill="#E5641F"/><rect x="10" y="3" width="3" height="1" fill="#243441"/><rect x="13" y="3" width="1" height="1" fill="#E5641F"/><rect x="14" y="3" width="1" height="1" fill="#C9A06A"/><rect x="15" y="3" width="1" height="1" fill="#243441"/><rect x="0" y="4" width="2" height="1" fill="#243441"/><rect x="2" y="4" width="1" height="1" fill="#C9A06A"/><rect x="3" y="4" width="5" height="1" fill="#E5641F"/><rect x="8" y="4" width="1" height="1" fill="#C9A06A"/><rect x="9" y="4" width="5" height="1" fill="#E5641F"/><rect x="14" y="4" width="1" height="1" fill="#C9A06A"/><rect x="15" y="4" width="1" height="1" fill="#243441"/><rect x="0" y="5" width="2" height="1" fill="#243441"/><rect x="2" y="5" width="1" height="1" fill="#C9A06A"/><rect x="3" y="5" width="5" height="1" fill="#E5641F"/><rect x="8" y="5" width="1" height="1" fill="#C9A06A"/><rect x="9" y="5" width="5" height="1" fill="#E5641F"/><rect x="14" y="5" width="1" height="1" fill="#C9A06A"/><rect x="15" y="5" width="1" height="1" fill="#243441"/><rect x="0" y="6" width="2" height="1" fill="#243441"/><rect x="2" y="6" width="1" height="1" fill="#C9A06A"/><rect x="3" y="6" width="5" height="1" fill="#E5641F"/><rect x="8" y="6" width="1" height="1" fill="#C9A06A"/><rect x="9" y="6" width="5" height="1" fill="#E5641F"/><rect x="14" y="6" width="1" height="1" fill="#C9A06A"/><rect x="15" y="6" width="1" height="1" fill="#243441"/><rect x="0" y="7" width="2" height="1" fill="#243441"/><rect x="2" y="7" width="1" height="1" fill="#C9A06A"/><rect x="3" y="7" width="5" height="1" fill="#E5641F"/><rect x="8" y="7" width="1" height="1" fill="#C9A06A"/><rect x="9" y="7" width="5" height="1" fill="#E5641F"/><rect x="14" y="7" width="1" height="1" fill="#C9A06A"/><rect x="15" y="7" width="1" height="1" fill="#243441"/><rect x="0" y="8" width="2" height="1" fill="#243441"/><rect x="2" y="8" width="1" height="1" fill="#C9A06A"/><rect x="3" y="8" width="5" height="1" fill="#E5641F"/><rect x="8" y="8" width="1" height="1" fill="#C9A06A"/><rect x="9" y="8" width="5" height="1" fill="#E5641F"/><rect x="14" y="8" width="1" height="1" fill="#C9A06A"/><rect x="15" y="8" width="1" height="1" fill="#243441"/><rect x="0" y="9" width="1" height="1" fill="#7A6A55"/><rect x="1" y="9" width="1" height="1" fill="#243441"/><rect x="2" y="9" width="1" height="1" fill="#C9A06A"/><rect x="3" y="9" width="5" height="1" fill="#E5641F"/><rect x="8" y="9" width="1" height="1" fill="#C9A06A"/><rect x="9" y="9" width="5" height="1" fill="#E5641F"/><rect x="14" y="9" width="1" height="1" fill="#C9A06A"/><rect x="15" y="9" width="1" height="1" fill="#243441"/><rect x="0" y="10" width="2" height="1" fill="#7A6A55"/><rect x="2" y="10" width="1" height="1" fill="#C9A06A"/><rect x="3" y="10" width="5" height="1" fill="#7A6A55"/><rect x="8" y="10" width="1" height="1" fill="#C9A06A"/><rect x="9" y="10" width="5" height="1" fill="#7A6A55"/><rect x="14" y="10" width="1" height="1" fill="#C9A06A"/><rect x="15" y="10" width="1" height="1" fill="#243441"/><rect x="0" y="11" width="2" height="1" fill="#7A6A55"/><rect x="2" y="11" width="1" height="1" fill="#C9A06A"/><rect x="3" y="11" width="5" height="1" fill="#7A6A55"/><rect x="8" y="11" width="1" height="1" fill="#C9A06A"/><rect x="9" y="11" width="5" height="1" fill="#7A6A55"/><rect x="14" y="11" width="1" height="1" fill="#C9A06A"/><rect x="15" y="11" width="1" height="1" fill="#243441"/><rect x="0" y="12" width="2" height="1" fill="#16222B"/><rect x="2" y="12" width="1" height="1" fill="#C9A06A"/><rect x="3" y="12" width="5" height="1" fill="#16222B"/><rect x="8" y="12" width="1" height="1" fill="#C9A06A"/><rect x="9" y="12" width="5" height="1" fill="#16222B"/><rect x="14" y="12" width="1" height="1" fill="#C9A06A"/><rect x="15" y="12" width="1" height="1" fill="#16222B"/><rect x="0" y="13" width="2" height="1" fill="#243441"/><rect x="2" y="13" width="1" height="1" fill="#C9A06A"/><rect x="3" y="13" width="5" height="1" fill="#243441"/><rect x="8" y="13" width="1" height="1" fill="#C9A06A"/><rect x="9" y="13" width="5" height="1" fill="#243441"/><rect x="14" y="13" width="1" height="1" fill="#C9A06A"/><rect x="15" y="13" width="1" height="1" fill="#243441"/><rect x="0" y="14" width="16" height="1" fill="#243441"/><rect x="0" y="15" width="16" height="1" fill="#243441"/></svg>
+      <div class="name">BMP Northwest<small>Consulting</small></div>
+    </div>
+    <dl>
+      <div><dt>Project</dt><dd>Stormwater compliance</dd></div>
+      <div><dt>Scale</dt><dd>N.T.S.</dd></div>
+      <div><dt>Area</dt><dd>Western Washington</dd></div>
+      <div><dt>Sheet</dt><dd>1 of 1</dd></div>
+    </dl>
   </div>
 </header>
 
-<section class="services" id="services">
+<section id="services">
   <div class="wrap">
-    <h2>What you get</h2>
+    <h2><span class="callout">A</span>What you get</h2>
     <ul class="svc">
       <li><h3>One less thing to worry about</h3><p>Stormwater compliance runs in the background while you build. You get a report, we handle the rest.</p></li>
       <li><h3>Inspections that keep you covered</h3><p>Regular visits and storm follow-ups, with a signed report in your inbox the same day. You never have to wonder whether the site is covered.</p></li>
@@ -146,25 +185,26 @@ footer a:hover{text-decoration:underline}
 
 <section id="why">
   <div class="wrap">
-    <h2>Why contractors call us</h2>
+    <h2><span class="callout">B</span>Why contractors call us</h2>
     <ul class="why">
-      <li><h3>We show up</h3><p>Same inspector every visit, week after week, for as long as the site is open.</p></li>
-      <li><h3>You hear from us the same day</h3><p>The report lands before you leave the office. No chasing paperwork at the end of the month.</p></li>
-      <li><h3>We know the crew's side of it</h3><p>Fifteen years in construction means the notes you get are practical, not a lecture.</p></li>
-      <li><h3>Nothing surprises you</h3><p>If something on site needs attention before the next storm, you know before the storm does.</p></li>
+      <li><h3><span>01</span>We show up</h3><p>Same inspector every visit, week after week, for as long as the site is open.</p></li>
+      <li><h3><span>02</span>You hear from us the same day</h3><p>The report lands before you leave the office. No chasing paperwork at the end of the month.</p></li>
+      <li><h3><span>03</span>We know the crew's side of it</h3><p>Fifteen years in construction means the notes you get are practical, not a lecture.</p></li>
+      <li><h3><span>04</span>Nothing surprises you</h3><p>If something on site needs attention before the next storm, you know before the storm does.</p></li>
     </ul>
   </div>
 </section>
 
 <section id="area">
   <div class="wrap area">
-    <div class="text">
-      <h2>Where we work</h2>
+    <div>
+      <h2><span class="callout">C</span>Where we work</h2>
       <p>Western Washington: the I-5 corridor from Bellingham to Vancouver, the Olympic Peninsula, and everything in between. If your site is in one of these counties, we can cover it.</p>
       <p class="county" data-county><small>Hover a county to see its name.</small></p>
     </div>
-    <div>
-<svg class="map" viewBox="0 0 520 646" role="img" aria-label="Service area: 19 counties in Western Washington">
+    <div class="plan">
+      <svg class="map" viewBox="-6 -6 532 686" role="img" aria-label="Service area: 19 counties in Western Washington">
+        <g class="co">
 <path d="M3.8,156.3 L7.5,152.7 L8.5,150.1 L9.2,146.1 L7.2,142.4 L9.9,139.5 L9.7,133.5 L10.4,131.6 L12.3,131.3 L13.2,125.4 L11.8,123.4 L9.5,123.9 L8.5,122.9 L4.0,116.0 L5.8,114.4 L7.2,115.1 L11.0,114.1 L16.1,114.7 L17.9,118.5 L21.8,117.4 L25.1,118.5 L28.4,121.8 L33.9,124.3 L47.6,133.8 L51.2,133.5 L53.7,135.6 L58.7,137.1 L59.1,138.9 L61.3,139.6 L63.1,139.6 L64.8,137.7 L66.4,138.2 L80.1,146.0 L83.7,146.7 L83.0,149.8 L88.8,152.2 L90.2,154.0 L96.8,155.0 L99.0,156.4 L103.4,156.1 L104.8,157.1 L111.8,157.2 L114.5,158.4 L118.5,157.1 L120.0,158.1 L124.7,158.1 L130.8,156.3 L132.3,157.5 L133.8,156.7 L133.4,155.9 L141.8,158.4 L142.7,160.6 L148.4,162.0 L153.4,158.9 L159.0,162.5 L167.5,160.6 L172.1,160.8 L172.4,161.4 L164.7,162.0 L169.5,165.1 L179.6,165.2 L181.1,166.1 L186.7,164.6 L191.7,165.5 L195.7,163.4 L204.9,154.3 L210.3,152.6 L206.5,154.5 L205.2,157.8 L209.1,159.5 L215.8,165.9 L218.1,171.4 L217.3,176.4 L222.3,182.8 L223.7,182.0 L221.9,177.0 L222.7,175.3 L220.5,171.5 L225.8,169.2 L234.0,169.6 L232.4,175.0 L229.7,175.0 L229.7,212.0 L159.2,212.0 L159.2,209.4 L19.3,209.4 L16.8,207.2 L15.4,204.4 L14.9,199.2 L12.8,197.1 L12.6,194.0 L11.0,193.3 L11.7,190.4 L8.4,174.2 L9.6,168.7 Z"><title>Clallam County</title></path>
 <path d="M249.0,593.2 L250.4,588.4 L251.9,587.2 L256.0,584.7 L258.6,585.3 L257.0,580.1 L254.9,579.9 L256.4,578.9 L256.1,576.5 L258.2,575.9 L258.7,573.0 L262.4,574.0 L262.1,571.5 L265.1,572.3 L266.7,574.0 L268.3,572.1 L271.9,572.5 L276.4,569.0 L278.9,569.5 L282.4,565.6 L282.2,564.4 L285.2,563.4 L286.9,564.1 L286.8,563.0 L292.5,563.3 L293.8,565.0 L296.8,564.9 L300.5,566.8 L304.7,568.6 L307.7,567.1 L310.0,562.2 L308.2,558.5 L309.6,558.2 L310.4,555.2 L312.5,553.5 L312.5,551.4 L315.7,549.4 L318.7,550.5 L318.3,645.0 L312.5,645.8 L307.9,644.9 L305.2,640.9 L301.7,639.7 L294.3,642.0 L280.4,635.8 L264.4,631.8 L253.1,624.5 L251.8,620.2 L253.4,605.5 L252.4,601.5 L249.1,596.0 Z"><title>Clark County</title></path>
 <path d="M195.6,491.5 L195.6,488.5 L208.8,488.1 L319.5,488.6 L318.7,550.5 L315.7,549.4 L312.5,551.4 L312.5,553.5 L310.4,555.2 L309.6,558.2 L308.2,558.5 L310.0,562.2 L306.3,568.1 L302.3,568.0 L299.4,565.7 L293.8,565.0 L293.3,563.7 L289.4,562.8 L288.3,563.7 L286.8,563.0 L286.4,564.3 L285.2,563.4 L282.2,564.4 L282.4,565.6 L279.2,569.2 L276.4,569.0 L272.2,572.4 L268.3,572.1 L266.7,574.0 L262.5,571.5 L262.4,574.0 L258.7,573.0 L258.2,575.9 L256.1,576.5 L256.4,578.9 L254.9,579.9 L257.0,580.1 L258.6,585.3 L255.7,584.8 L250.4,588.4 L250.4,585.2 L247.1,576.8 L247.8,573.2 L246.8,567.8 L243.8,564.1 L241.4,557.8 L238.7,554.7 L237.8,549.3 L235.4,544.9 L227.9,541.0 L222.7,535.6 L218.0,533.2 L208.5,526.0 L202.1,525.3 L196.2,528.3 Z"><title>Cowlitz County</title></path>
@@ -184,14 +224,26 @@ footer a:hover{text-decoration:underline}
 <path d="M197.8,371.9 L197.7,358.0 L213.7,358.0 L213.9,354.0 L216.2,352.3 L220.5,351.8 L222.5,346.0 L228.1,343.1 L231.2,338.3 L231.5,339.9 L234.4,341.0 L235.4,344.4 L238.4,344.3 L241.1,342.5 L243.3,343.4 L242.5,349.5 L244.5,352.4 L245.0,343.8 L246.6,340.4 L251.4,351.2 L253.2,351.5 L257.8,355.1 L257.9,356.3 L262.1,354.9 L260.2,357.9 L260.8,361.7 L264.1,365.8 L263.7,368.6 L266.3,373.2 L267.3,372.5 L270.0,374.2 L269.1,378.1 L272.4,380.0 L272.5,378.2 L276.4,378.0 L277.0,379.2 L275.8,379.2 L275.8,380.2 L278.5,380.5 L277.4,381.1 L278.5,385.9 L283.0,387.9 L283.9,389.6 L287.3,391.6 L287.7,398.6 L291.8,399.3 L292.6,401.4 L293.4,400.7 L298.1,403.2 L300.4,402.7 L301.9,403.8 L302.8,402.7 L305.9,404.3 L308.3,402.9 L308.7,405.5 L311.4,405.9 L311.5,409.5 L310.3,411.9 L313.6,416.0 L314.4,415.6 L316.6,417.7 L317.0,416.4 L319.4,415.7 L321.1,417.0 L323.1,416.8 L324.1,418.1 L202.8,417.8 L203.2,374.6 L197.5,374.4 Z"><title>Thurston County</title></path>
 <path d="M131.1,503.1 L131.2,488.7 L195.6,488.5 L196.2,528.3 L187.7,533.5 L176.2,533.2 L173.8,531.7 L168.7,526.6 L169.1,517.7 L163.1,510.5 L159.8,509.9 L153.9,512.2 L153.9,511.0 L145.5,512.0 L138.5,510.7 L137.2,509.7 L137.1,505.3 L134.5,503.7 L131.5,504.3 L131.1,506.5 Z"><title>Wahkiakum County</title></path>
 <path d="M267.5,54.2 L271.3,55.2 L272.1,53.7 L273.1,56.5 L271.8,57.6 Z M258.4,50.6 L259.2,47.4 L262.8,50.0 L265.6,57.0 L270.4,60.4 L272.3,65.0 L272.8,67.6 L269.4,65.5 L264.5,60.1 L262.2,54.3 L258.8,53.3 Z M245.7,10.8 L248.9,5.1 L254.3,1.0 L253.9,0.0 L381.3,1.0 L495.2,0.4 L493.9,3.8 L490.9,5.1 L491.5,6.7 L495.5,8.7 L497.7,12.0 L501.8,8.1 L505.6,8.8 L507.4,11.3 L507.4,13.1 L505.3,14.2 L505.3,17.9 L506.5,19.2 L505.5,22.5 L506.5,24.2 L509.9,25.8 L510.4,27.5 L509.0,33.7 L509.9,40.3 L511.2,42.8 L513.2,43.1 L517.2,49.9 L520.0,51.8 L517.2,53.1 L516.9,57.5 L514.0,57.0 L512.0,61.2 L512.2,63.1 L510.2,62.8 L507.8,64.5 L488.0,64.5 L488.0,67.5 L287.9,66.7 L285.1,62.5 L287.8,61.9 L286.9,56.3 L285.5,56.7 L285.6,58.4 L284.1,53.3 L285.6,52.4 L287.7,46.9 L285.0,45.8 L282.0,42.3 L278.5,41.8 L272.8,44.8 L267.3,53.5 L264.4,49.5 L267.9,40.6 L265.6,39.9 L263.7,37.3 L261.2,36.9 L260.3,37.4 L261.2,39.7 L259.9,40.2 L259.0,29.0 L249.4,20.5 L254.7,17.0 L255.0,12.6 L252.3,11.2 L249.4,13.1 Z M211.8,0.1 L218.7,0.1 L220.5,4.7 L218.0,4.7 L212.6,5.8 Z"><title>Whatcom County</title></path>
-</svg>
+        </g>
+        <g aria-hidden="true">
+          <path d="M28 4 L42 44 L28 36 L14 44 Z" fill="#16222B"/>
+          <text x="28" y="62" text-anchor="middle" font-size="14">N</text>
+          <g transform="translate(0,662)">
+            <rect x="0" y="0" width="67.6" height="6" fill="#16222B"/>
+            <rect x="67.6" y="0" width="67.6" height="6" fill="#F7F8F9" stroke="#16222B" stroke-width="1"/>
+            <text x="0" y="20" font-size="11">0</text>
+            <text x="67.6" y="20" font-size="11" text-anchor="middle">25</text>
+            <text x="135.3" y="20" font-size="11" text-anchor="middle">50 MI</text>
+          </g>
+        </g>
+      </svg>
     </div>
   </div>
 </section>
 
 <section id="how">
   <div class="wrap">
-    <h2>How it works</h2>
+    <h2><span class="callout">D</span>How it works</h2>
     <ol class="steps">
       <li><h3>Send the permit and SWPPP</h3><p>We look over coverage, discharge points, and sampling needs before the first visit.</p></li>
       <li><h3>Inspections start</h3><p>Visits on the schedule your permit sets, nothing extra. The report is in your inbox the day of each visit.</p></li>
@@ -203,16 +255,19 @@ footer a:hover{text-decoration:underline}
 <section id="about">
   <div class="wrap about">
     <div class="text">
-      <h2>About Max Day</h2>
+      <h2><span class="callout">E</span>About Max Day</h2>
       <p>Max grew up around construction sites and has worked in the industry for 15 years. He has inspected everything from small commercial pads to 20+ acre multi-phase, multi-building mixed-use developments with multiple stormwater vaults and off-site dewatering.</p>
       <p>BMP Northwest has handled inspections on multiple concurrent sites across Western Washington, with reports delivered the same day.</p>
     </div>
-    <ul class="facts">
-      <li><b>Certification</b><span>Washington Certified Erosion and Sediment Control Lead (CESCL)</span></li>
-      <li><b>Permit work</b><span>Inspections and reporting under the Construction Stormwater General Permit</span></li>
-      <li><b>Service area</b><span>Western Washington, see the map above</span></li>
-      <li><b>Based in</b><span>Centralia, Washington</span></li>
-    </ul>
+    <div class="facts">
+      <h3>Inspector details</h3>
+      <dl>
+        <div><dt>Certification</dt><dd>Washington Certified Erosion and Sediment Control Lead (CESCL)</dd></div>
+        <div><dt>Permit work</dt><dd>Inspections and reporting under the Construction Stormwater General Permit</dd></div>
+        <div><dt>Service area</dt><dd>Western Washington, see the map above</dd></div>
+        <div><dt>Based in</dt><dd>Centralia, Washington</dd></div>
+      </dl>
+    </div>
   </div>
 </section>
 
@@ -221,29 +276,31 @@ footer a:hover{text-decoration:underline}
     <div class="grid">
       <div>
         <h2>Have a site that needs coverage?</h2>
-        <p style="color:#B9C6CF;max-width:40ch">Call or email with the site address and permit number. Most new sites get their first visit within a few days.</p>
+        <p class="mute" style="max-width:40ch">Call or email with the site address and permit number. Most new sites get their first visit within a few days.</p>
       </div>
-      <div class="contact" data-reveal>
-        <a data-phone hidden></a><br>
+      <div class="box contact" data-reveal>
+        <span class="redline">Contact</span>
+        <a class="phone" data-phone hidden></a>
         <a data-email hidden></a>
-        <button class="btn orange" type="button" data-show>Show phone and email</button>
+        <button class="btn or" type="button" data-show>Show phone and email</button>
         <p class="note" data-note hidden></p>
-        <span style="color:#B9C6CF;display:block;margin-top:10px">BMP Northwest Consulting<br>Centralia, Washington</span>
+        <span class="addr">BMP Northwest Consulting<br>Centralia, Washington</span>
       </div>
     </div>
-    <p class="small">BMP Consulting LLC, doing business as BMP Northwest Consulting.</p>
+    <p class="legal">BMP Consulting LLC, doing business as BMP Northwest Consulting.</p>
   </div>
 </footer>
 
+</div>
 <script>
 (function(){
   var label=document.querySelector("[data-county]"), dflt=label.innerHTML, cur=null;
-  document.querySelectorAll(".map path").forEach(function(p){
+  document.querySelectorAll(".map .co path").forEach(function(p){
     var name=p.querySelector("title").textContent;
     function on(){ if(cur) cur.classList.remove("on"); cur=p; p.classList.add("on"); label.textContent=name; }
     function off(){ p.classList.remove("on"); if(cur===p){cur=null; label.innerHTML=dflt;} }
     p.addEventListener("mouseenter",on); p.addEventListener("mouseleave",off);
-    p.addEventListener("touchstart",function(e){ on(); },{passive:true});
+    p.addEventListener("touchstart",on,{passive:true});
     p.setAttribute("tabindex","0"); p.addEventListener("focus",on); p.addEventListener("blur",off);
   });
 })();
