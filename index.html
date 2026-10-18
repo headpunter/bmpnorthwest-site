@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BMP Northwest Consulting</title>
+<meta name="description" content="Construction stormwater inspections and CSWGP compliance for job sites across Puget Sound. Washington CESCL, based in Centralia, WA.">
+<meta property="og:title" content="BMP Northwest Consulting">
+<meta property="og:description" content="Construction stormwater inspections and CSWGP compliance for Puget Sound job sites.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.bmpnorthwest.com/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@87.5,400;87.5,500;100,400;100,500;100,700;112.5,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16222B; --slate:#243441; --rain:#E7ECEF; --paper:#F7F8F9;
+  --orange:#E5641F; --orange-ink:#B84B12; --mute:#5B6B77; --line:#C9D2D8;
+  --w:1080px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 Archivo,system-ui,sans-serif;font-variation-settings:"wdth" 100}
+a{color:inherit}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 20px}
+h1,h2,h3{margin:0;line-height:1.08;font-weight:700;font-variation-settings:"wdth" 112.5;letter-spacing:-.01em}
+h2{font-size:clamp(28px,4vw,38px);margin-bottom:28px}
+p{margin:0 0 1em}
+.btn{display:inline-block;padding:14px 22px;border-radius:4px;font-weight:500;text-decoration:none;border:2px solid transparent}
+.btn.orange{background:var(--orange);color:#fff}
+.btn.orange:hover{background:var(--orange-ink)}
+.btn.ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn.ghost:hover{border-color:#fff}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+
+/* hero */
+.hero{background:var(--slate);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;
+  background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.07) 0 1px,transparent 1px 14px);
+  mask-image:linear-gradient(180deg,transparent 10%,#000 60%);-webkit-mask-image:linear-gradient(180deg,transparent 10%,#000 60%)}
+.hero .wrap{position:relative;padding-top:28px;padding-bottom:64px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:18px;margin-bottom:72px}
+.brand svg{width:34px;height:34px}
+.hero h1{font-size:clamp(34px,6vw,64px);max-width:15ch}
+.hero .lede{font-size:clamp(18px,2.2vw,22px);max-width:46ch;margin:22px 0 36px;color:#D6DEE4}
+.phone{display:block;font-weight:700;font-variation-settings:"wdth" 112.5;font-size:clamp(34px,6.5vw,72px);line-height:1;color:var(--orange);text-decoration:none;letter-spacing:-.02em;margin-bottom:24px}
+.phone:hover{color:#FF8A4A}
+.hero .acts{display:flex;gap:12px;flex-wrap:wrap}
+
+/* sections */
+section{padding:72px 0}
+section + section{border-top:1px solid var(--line)}
+.services{background:var(--rain)}
+.svc{display:grid;grid-template-columns:1fr 1fr;gap:34px 56px;list-style:none;margin:0;padding:0}
+.svc li{border-top:3px solid var(--orange);padding-top:14px}
+.svc h3{font-size:21px;margin-bottom:8px}
+.svc p{margin:0;color:var(--mute);max-width:42ch}
+
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:start}
+.about .text p{max-width:56ch}
+.facts{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.facts li{padding:14px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:120px 1fr;gap:14px}
+.facts b{font-weight:500;color:var(--mute)}
+
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:40px;counter-reset:s}
+.steps li{counter-increment:s}
+.steps li::before{content:counter(s);display:block;font-size:44px;font-weight:700;color:var(--orange);line-height:1;margin-bottom:10px;font-variation-settings:"wdth" 112.5}
+.steps h3{font-size:20px;margin-bottom:8px}
+.steps p{color:var(--mute);margin:0;max-width:34ch}
+
+footer{background:var(--ink);color:#fff;padding:64px 0 40px}
+footer .grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+footer h2{font-size:clamp(26px,3.5vw,34px)}
+footer a{text-decoration:none}
+footer a:hover{text-decoration:underline}
+.contact{font-size:22px;line-height:1.5}
+.contact a{color:#fff;font-weight:500}
+.small{color:#9FB0BC;font-size:15px;margin-top:40px}
+.small a{color:#9FB0BC}
+
+@media (max-width:760px){
+  .brand{margin-bottom:48px}
+  .svc,.about,.steps,footer .grid{grid-template-columns:1fr}
+  .facts li{grid-template-columns:1fr;gap:2px}
+  section{padding:56px 0}
+  .hero .wrap{padding-bottom:48px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .btn,.phone{transition:color .15s,background-color .15s,border-color .15s}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="4" fill="#E5641F"/><path d="M8 24h18M10 19h14M12 14h10M14 9h6" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
+      BMP Northwest Consulting
+    </div>
+    <h1>Construction stormwater inspections for Puget Sound job sites.</h1>
+    <p class="lede">Weekly and post-storm CESCL inspections, sampling, and permit reporting under the Washington Construction Stormwater General Permit. Reports the same day, every week, for as long as the site is open.</p>
+    <a class="phone" href="tel:+13602698099">360 269 8099</a>
+    <div class="acts">
+      <a class="btn orange" href="mailto:Max@BMPnorthwest.com">Email Max</a>
+      <a class="btn ghost" href="#services">What we do</a>
+    </div>
+  </div>
+</header>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <ul class="svc">
+      <li><h3>Weekly and post-storm inspections</h3><p>Every site walked weekly and within 24 hours of a qualifying storm, with the signed inspection form delivered the same day.</p></li>
+      <li><h3>Permit compliance management</h3><p>Tracking inspection cadence, stabilization deadlines, and the 2026 permit changes so nothing lapses between visits.</p></li>
+      <li><h3>DMR and permit reporting</h3><p>Monthly Discharge Monitoring Reports filed on time through Ecology's portal, including the signatory delegation paperwork most sites never finish.</p></li>
+      <li><h3>Turbidity and pH sampling</h3><p>Meter-based sampling at discharge points during rain events, with calibration logged and results recorded on the inspection form.</p></li>
+      <li><h3>BMP checks and contractor direction</h3><p>Clear written instructions on what to fix before the next visit, so the crew knows exactly what is expected and the paper trail shows it.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="text">
+      <h2>About Max Day</h2>
+      <p>Max grew up around construction sites and has worked in the industry for 15 years. He has inspected everything from small commercial pads to a multi-phase, multi-building mixed-use development with five stormwater vaults and monitored discharges during rain events.</p>
+      <p>BMP Northwest has handled weekly inspections on multiple concurrent sites across King, Pierce, and Kitsap counties. Reports are delivered the same day in organized digital records, so the owner, the GC, and the permittee all have the same file.</p>
+    </div>
+    <ul class="facts">
+      <li><b>Certification</b><span>Washington CESCL, Certified Erosion and Sediment Control Lead</span></li>
+      <li><b>Permit</b><span>Construction Stormwater General Permit, 2026 edition</span></li>
+      <li><b>Service area</b><span>Puget Sound and Southwest Washington</span></li>
+      <li><b>Based in</b><span>Centralia, Washington</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><h3>Send the permit and SWPPP</h3><p>We review coverage, discharge points, and sampling requirements before the first visit.</p></li>
+      <li><h3>Weekly site visits begin</h3><p>Same day each week, plus post-storm visits when rainfall triggers one. Reports arrive the same day.</p></li>
+      <li><h3>Monthly reporting</h3><p>DMRs filed, records kept current, and a clean file ready if Ecology ever asks.</p></li>
+    </ol>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <h2>Need an inspector this week?</h2>
+        <p style="color:#B9C6CF;max-width:40ch">Call or email with the site address and permit number. Most new sites get their first visit within a few days.</p>
+      </div>
+      <div class="contact">
+        <a href="tel:+13602698099">360 269 8099</a><br>
+        <a href="mailto:Max@BMPnorthwest.com">Max@BMPnorthwest.com</a><br>
+        <span style="color:#B9C6CF">BMP Northwest Consulting<br>Centralia, Washington</span>
+      </div>
+    </div>
+    <p class="small">BMP Consulting LLC, doing business as BMP Northwest Consulting.</p>
+  </div>
+</footer>
+
+</body>
+</html>
