@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BMP Northwest Consulting</title>
-<meta name="description" content="Construction stormwater inspections and CSWGP compliance for job sites across Puget Sound. Washington CESCL, based in Centralia, WA.">
+<meta name="description" content="Stormwater permit inspections, sampling, and reporting for construction sites across Puget Sound. One call and it is off your plate. Washington CESCL, based in Centralia, WA.">
 <meta property="og:title" content="BMP Northwest Consulting">
-<meta property="og:description" content="Construction stormwater inspections and CSWGP compliance for Puget Sound job sites.">
+<meta property="og:description" content="Your stormwater permit, handled. Inspections, sampling, and reporting for Puget Sound job sites.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.bmpnorthwest.com/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -61,6 +61,10 @@ section + section{border-top:1px solid var(--line)}
 .svc h3{font-size:21px;margin-bottom:8px}
 .svc p{margin:0;color:var(--mute);max-width:42ch}
 
+.why{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:28px 56px}
+.why li{padding-left:18px;border-left:3px solid var(--orange)}
+.why h3{font-size:20px;margin-bottom:6px}
+.why p{margin:0;color:var(--mute);max-width:44ch}
 .about{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:start}
 .about .text p{max-width:56ch}
 .facts{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
@@ -85,7 +89,7 @@ footer a:hover{text-decoration:underline}
 
 @media (max-width:760px){
   .brand{margin-bottom:48px}
-  .svc,.about,.steps,footer .grid{grid-template-columns:1fr}
+  .svc,.why,.about,.steps,footer .grid{grid-template-columns:1fr}
   .facts li{grid-template-columns:1fr;gap:2px}
   section{padding:56px 0}
   .hero .wrap{padding-bottom:48px}
@@ -103,14 +107,14 @@ footer a:hover{text-decoration:underline}
       <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="4" fill="#E5641F"/><path d="M8 24h18M10 19h14M12 14h10M14 9h6" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
       BMP Northwest Consulting
     </div>
-    <h1>Construction stormwater inspections for Puget Sound job sites.</h1>
-    <p class="lede">CESCL inspections, sampling, and permit reporting that keep your site covered and your file clean, so you can get on with building.</p>
+    <h1>Your stormwater permit, handled.</h1>
+    <p class="lede">Inspections, sampling, and reporting for construction sites across Puget Sound. One call and it is off your plate.</p>
     <div class="reveal" data-reveal>
       <a class="phone" data-phone hidden></a>
       <div class="acts">
         <button class="btn orange" type="button" data-show>Show phone and email</button>
         <a class="btn orange" data-email hidden>Email Max</a>
-        <a class="btn ghost" href="#services">What we do</a>
+        <a class="btn ghost" href="#services">What you get</a>
       </div>
       <p class="note" data-note hidden></p>
     </div>
@@ -119,14 +123,38 @@ footer a:hover{text-decoration:underline}
 
 <section class="services" id="services">
   <div class="wrap">
-    <h2>What we do</h2>
+    <h2>What you get</h2>
     <ul class="svc">
-      <li><h3>Inspections that keep you covered</h3><p>Regular visits and storm follow-ups, with a signed report in your inbox the same day. You never have to wonder whether the site is covered.</p></li>
       <li><h3>One less thing to worry about</h3><p>Stormwater compliance runs in the background while you build. You get a report, we handle the rest.</p></li>
+      <li><h3>Inspections that keep you covered</h3><p>Regular visits and storm follow-ups, with a signed report in your inbox the same day. You never have to wonder whether the site is covered.</p></li>
       <li><h3>Reporting done for you</h3><p>Monthly DMRs filed on time through Ecology's portal, signatory paperwork included, so a missed filing never shows up when an inspector visits.</p></li>
       <li><h3>Sampling without the scramble</h3><p>Turbidity and pH readings taken when it rains, logged and documented, so any question about a discharge already has an answer.</p></li>
       <li><h3>Clear direction for the crew</h3><p>Short, specific written notes on what to fix and when, so the superintendent is never guessing and the record shows it was handled.</p></li>
+      <li><h3>A file you can hand to anyone</h3><p>Every report organized by site and date in a shared folder. Owner, GC, and permittee all look at the same thing.</p></li>
     </ul>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <h2>Why contractors call us</h2>
+    <ul class="why">
+      <li><h3>We show up</h3><p>Same inspector every visit, on sites from Kent to Tacoma to the Kitsap Peninsula, week after week.</p></li>
+      <li><h3>You hear from us the same day</h3><p>The report lands before you leave the office. No chasing paperwork at the end of the month.</p></li>
+      <li><h3>We know the crew's side of it</h3><p>Fifteen years in construction means the notes you get are practical, not a lecture.</p></li>
+      <li><h3>Nothing surprises you</h3><p>If something on site needs attention before the next storm, you know before the storm does.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><h3>Send the permit and SWPPP</h3><p>We look over coverage, discharge points, and sampling needs before the first visit.</p></li>
+      <li><h3>Inspections start</h3><p>Visits on the schedule your permit sets, nothing extra. The report is in your inbox the day of each visit.</p></li>
+      <li><h3>Your file stays clean</h3><p>DMRs filed, records kept current, and everything ready if Ecology ever asks.</p></li>
+    </ol>
   </div>
 </section>
 
@@ -135,7 +163,7 @@ footer a:hover{text-decoration:underline}
     <div class="text">
       <h2>About Max Day</h2>
       <p>Max grew up around construction sites and has worked in the industry for 15 years. He has inspected everything from small commercial pads to a multi-phase, multi-building mixed-use development with five stormwater vaults and monitored discharges during rain events.</p>
-      <p>BMP Northwest has handled weekly inspections on multiple concurrent sites across King, Pierce, and Kitsap counties. Reports are delivered the same day in organized digital records, so the owner, the GC, and the permittee all have the same file.</p>
+      <p>BMP Northwest has handled inspections on multiple concurrent sites across King, Pierce, and Kitsap counties, with reports delivered the same day in organized digital records.</p>
     </div>
     <ul class="facts">
       <li><b>Certification</b><span>Washington Certified Erosion and Sediment Control Lead (CESCL)</span></li>
@@ -146,22 +174,11 @@ footer a:hover{text-decoration:underline}
   </div>
 </section>
 
-<section id="how">
-  <div class="wrap">
-    <h2>How it works</h2>
-    <ol class="steps">
-      <li><h3>Send the permit and SWPPP</h3><p>We review coverage, discharge points, and sampling requirements before the first visit.</p></li>
-      <li><h3>Inspections start</h3><p>Visits on the schedule your permit sets, nothing extra. The report is in your inbox the day of each visit.</p></li>
-      <li><h3>Your file stays clean</h3><p>DMRs filed, records kept current, and everything ready if Ecology ever asks.</p></li>
-    </ol>
-  </div>
-</section>
-
 <footer id="contact">
   <div class="wrap">
     <div class="grid">
       <div>
-        <h2>Need an inspector this week?</h2>
+        <h2>Have a site that needs coverage?</h2>
         <p style="color:#B9C6CF;max-width:40ch">Call or email with the site address and permit number. Most new sites get their first visit within a few days.</p>
       </div>
       <div class="contact" data-reveal>
