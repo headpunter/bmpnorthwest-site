@@ -47,6 +47,10 @@ p{margin:0 0 1em}
 .phone{display:block;font-weight:700;font-variation-settings:"wdth" 112.5;font-size:clamp(34px,6.5vw,72px);line-height:1;color:var(--orange);text-decoration:none;letter-spacing:-.02em;margin-bottom:24px}
 .phone:hover{color:#FF8A4A}
 .hero .acts{display:flex;gap:12px;flex-wrap:wrap}
+.btn{cursor:pointer;font:inherit;font-weight:500}
+.note{font-size:15px;color:#B9C6CF;margin:12px 0 0}
+.turnstile{margin:0 0 16px}
+[hidden]{display:none!important}
 
 /* sections */
 section{padding:72px 0}
@@ -101,10 +105,14 @@ footer a:hover{text-decoration:underline}
     </div>
     <h1>Construction stormwater inspections for Puget Sound job sites.</h1>
     <p class="lede">Weekly and post-storm CESCL inspections, sampling, and permit reporting under the Washington Construction Stormwater General Permit. Reports the same day, every week, for as long as the site is open.</p>
-    <a class="phone" href="tel:+13602698099">360 269 8099</a>
-    <div class="acts">
-      <a class="btn orange" href="mailto:Max@BMPnorthwest.com">Email Max</a>
-      <a class="btn ghost" href="#services">What we do</a>
+    <div class="reveal" data-reveal>
+      <a class="phone" data-phone hidden></a>
+      <div class="acts">
+        <button class="btn orange" type="button" data-show>Show phone and email</button>
+        <a class="btn orange" data-email hidden>Email Max</a>
+        <a class="btn ghost" href="#services">What we do</a>
+      </div>
+      <p class="note" data-note hidden></p>
     </div>
   </div>
 </header>
@@ -156,15 +164,51 @@ footer a:hover{text-decoration:underline}
         <h2>Need an inspector this week?</h2>
         <p style="color:#B9C6CF;max-width:40ch">Call or email with the site address and permit number. Most new sites get their first visit within a few days.</p>
       </div>
-      <div class="contact">
-        <a href="tel:+13602698099">360 269 8099</a><br>
-        <a href="mailto:Max@BMPnorthwest.com">Max@BMPnorthwest.com</a><br>
-        <span style="color:#B9C6CF">BMP Northwest Consulting<br>Centralia, Washington</span>
+      <div class="contact" data-reveal>
+        <a data-phone hidden></a><br>
+        <a data-email hidden></a>
+        <button class="btn orange" type="button" data-show>Show phone and email</button>
+        <p class="note" data-note hidden></p>
+        <span style="color:#B9C6CF;display:block;margin-top:10px">BMP Northwest Consulting<br>Centralia, Washington</span>
       </div>
     </div>
     <p class="small">BMP Consulting LLC, doing business as BMP Northwest Consulting.</p>
   </div>
 </footer>
 
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+<script>
+(function(){
+  var SITEKEY="0x4AAAAAAFam0yHS-y4Ok5Dy", busy=false, done=false;
+  var blocks=[].slice.call(document.querySelectorAll("[data-reveal]"));
+  function note(t){ blocks.forEach(function(b){ var n=b.querySelector("[data-note]"); n.textContent=t; n.hidden=!t; }); }
+  function fill(d){
+    done=true;
+    blocks.forEach(function(b){
+      var p=b.querySelector("[data-phone]"), e=b.querySelector("[data-email]"), s=b.querySelector("[data-show]");
+      p.textContent=d.phone; p.href="tel:+1"+d.phone.replace(/\D/g,""); p.hidden=false;
+      e.textContent=(b.classList.contains("contact")?d.email:"Email Max"); e.href="mailto:"+d.email; e.hidden=false;
+      s.hidden=true;
+    });
+    note("");
+  }
+  function verify(token){
+    fetch("/api/contact",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({token:token})})
+      .then(function(r){return r.json();})
+      .then(function(d){ if(d.ok){fill(d);} else {note("Couldn't verify. Please try again.");} busy=false; })
+      .catch(function(){ note("Couldn't reach the server. Please try again."); busy=false; });
+  }
+  function start(btn){
+    if(busy||done) return; busy=true;
+    if(!window.turnstile){ note("Loading check…"); setTimeout(function(){busy=false; start(btn);},600); return; }
+    var holder=document.createElement("div"); holder.className="turnstile";
+    btn.parentNode.insertBefore(holder, btn); btn.hidden=true;
+    note("");
+    turnstile.render(holder,{sitekey:SITEKEY,theme:"dark",callback:function(t){ holder.remove(); verify(t); },
+      "error-callback":function(){ holder.remove(); btn.hidden=false; busy=false; note("Check failed. Please try again."); }});
+  }
+  blocks.forEach(function(b){ b.querySelector("[data-show]").addEventListener("click",function(){start(this);}); });
+})();
+</script>
 </body>
 </html>
